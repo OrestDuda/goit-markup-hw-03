@@ -207,7 +207,8 @@ ul {
   background: #2f303a;
 }
 .footer-info {
-  padding: 60px 215px;
+  padding-top: 60px;
+  padding-left: 215px;
 }
 .footer-logo {
   display: inline-block;
@@ -242,11 +243,13 @@ ul {
   margin-bottom: 9px;
 }
 .footer-phone {
+  display: inline-block;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 60px;
 }
 
 /*---------------------------------------------------------- Portfolio Styles*/
