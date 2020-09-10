@@ -306,14 +306,17 @@ ul {
   box-sizing: border-box;
   margin-bottom: 30px;
 }
-
+.container-portfolio-examples > ul > li > img {
+  padding-bottom: 20px;
+}
 .portfolio-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
-  margin: 20px 0px 4px 24px;
+  padding: 0px 0px 4px 24px;
+  margin: 0px;
 }
 
 .portfolio-type {
@@ -322,5 +325,6 @@ ul {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 0px 0px 20px 24px;
+  padding: 0px 0px 20px 24px;
+  margin: 0px;
 }
