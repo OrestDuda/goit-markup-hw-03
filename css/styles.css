@@ -2,8 +2,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  width: 1600px;
-  margin: auto;
 }
 a {
   text-decoration: none;
@@ -16,15 +14,16 @@ ul {
 
 /*---------------------------------------------------------- Header */
 .header {
+  background: #ffffff;
+  padding: 25px 215px;
   border-bottom: 1px solid #ececec;
 }
-.inside-header {
-  background: #ffffff;
-  height: 80px;
-  padding: 0px 215px;
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .header-logo {
-  float: left;
   display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -33,29 +32,27 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #2196f3;
-  padding-top: 24px;
 }
 .header-logo span {
   color: #212121;
 }
+.navigation {
+  align-self: center;
+}
 .header-links {
   display: flex;
   flex-direction: row;
-  margin-left: 93px;
   justify-content: space-between;
-  width: 294px;
 }
 .header-contacts {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 331px;
-  width: 300px;
 }
-.navigation {
-  display: inline-block;
-  float: left;
-  padding-top: 32px;
+.header-links li,
+.header-contacts li {
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .navigation > ul > li > a {
   font-weight: 500;
@@ -71,6 +68,7 @@ ul {
 .hero {
   background: #2f303a;
   padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 .hero h2 {
@@ -90,7 +88,6 @@ ul {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
-  margin: 0px 0px 200px 0px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -101,15 +98,11 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.container {
-  padding: 94px 215px 94px 215px;
-}
 .features {
   background: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 94px;
+  padding: 94px 215px 0px 215px;
 }
-.features > ul {
+.container-features > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -135,8 +128,10 @@ ul {
 }
 .our-work {
   background: #ffffff;
+  padding: 94px 215px 94px 215px;
 }
-.our-work > h2 {
+
+.container-our-work > h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -144,29 +139,27 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 0px 0px 50px 0px;
+  padding-bottom: 50px;
+  margin: 0px;
 }
-
 .our-work-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .our-team {
+  padding: 94px 215px 90px 215px;
   background: #f5f4fa;
 }
-.our-team > h2 {
+.container-our-team > h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   color: #212121;
-  margin: 0px 0px 50px 0px;
-}
-.members {
-  padding: 0px 215px 90px 215px;
+  margin: 0px;
+  padding-bottom: 50px;
 }
 .members > ul {
   display: flex;
@@ -204,11 +197,9 @@ ul {
 
 /*---------------------------------------------------------- Footer */
 .footer {
-  background: #2f303a;
-}
-.footer-info {
   padding-top: 60px;
   padding-left: 215px;
+  background: #2f303a;
 }
 .footer-logo {
   display: inline-block;
@@ -253,14 +244,14 @@ ul {
 }
 
 /*---------------------------------------------------------- Portfolio Styles*/
-.portfolio-types {
+.container-portfolio-types {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
-.portfolio-types > h2 {
+.container-portfolio-types > h2 {
   display: none;
 }
-.portfolio-types ul {
+.container-portfolio-types ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -295,26 +286,25 @@ ul {
   color: #ffffff;
 }
 .portfolio-examples {
-  padding: 0px 215px 0px 215px;
   background: #ffffff;
 }
-.portfolio-examples > h2 {
+.container-portfolio-examples {
+  padding: 0px 215px 64px 215px;
+}
+.container-portfolio-examples > h2 {
   display: none;
 }
-.portfolio-examples ul {
+.container-portfolio-examples ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.portfolio-examples li {
+.container-portfolio-examples li {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-bottom: 30px;
-}
-.portfolio-examples > ul > li:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
 }
 
 .portfolio-name {
